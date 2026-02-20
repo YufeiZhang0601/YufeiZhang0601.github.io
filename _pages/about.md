@@ -7,12 +7,14 @@ redirect_from:
   - /about.html
 ---
 
-你好，我是**张宇飞**（Yufei Zhang）。欢迎来到我的个人主页。
+**张宇飞 (Yufei Zhang)** — Columbia University 机械工程硕士，研究方向包括机器人学、强化学习、康复机器人与多模态人机交互。
 
-Hi, I'm **Yufei Zhang** (张宇飞). Welcome to my personal website.
+**Yufei Zhang** — MS in Mechanical Engineering at Columbia University. Research interests: robotics, reinforcement learning, rehabilitation systems, and human-robot interaction.
 
-这里会展示我的教育背景、工作经历、项目与发表等。您可以在导航栏查看 [Publications](/publications/)、[Talks](/talks/)、[Teaching](/teaching/)、[Portfolio](/portfolio/) 和 [CV](/cv/)。
+**Contact**  
+Tel: (+1) 646-713-5164  
+E-mail: [yz4917@columbia.edu](mailto:yz4917@columbia.edu)  
+LinkedIn: [linkedin.com/in/zyffbk](https://www.linkedin.com/in/zyffbk)  
+Address: 425 Summit Ave, Jersey City, NJ 07306, USA
 
-This site is built with [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/). You can find the source in my [GitHub repository](https://github.com/YufeiZhang0601/YufeiZhang0601.github.io).
-
-如有合作或交流意向，欢迎通过侧栏的邮箱与我联系。
+本站使用 [Jekyll](https://jekyllrb.com/) 构建，托管于 [GitHub Pages](https://pages.github.com/)。源码见 [GitHub](https://github.com/YufeiZhang0601/YufeiZhang0601.github.io)。

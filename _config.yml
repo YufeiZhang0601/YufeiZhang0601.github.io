@@ -25,11 +25,11 @@ author:
   avatar           : "profile.png"
   name             : "张宇飞 (Yufei Zhang)"
   pronouns         :
-  bio              : "个人主页 | Personal Website"
-  location         : ""   # 填写你的城市，如 Beijing
-  employer         : ""   # 填写学校或单位
+  bio              : "MS in Mechanical Engineering @ Columbia. Robotics, reinforcement learning, rehabilitation systems."
+  location         : "Jersey City, NJ, USA"
+  employer         : "Columbia University"
   uri              :
-  email            : ""   # 填写你的邮箱
+  email            : "yz4917@columbia.edu"
 
   # Academic websites
   academia         :
@@ -64,7 +64,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :   # 填写你的 LinkedIn 用户名
+  linkedin         : "zyffbk"
   mastodon         :
   medium           :
   pinterest        :
