@@ -1,64 +1,54 @@
 ---
 layout: archive
-title: "CV"
+title: "简历 | CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+**下载 PDF：** 若您已将简历 PDF 放入 `files` 文件夹（如 `resume.pdf`），可在此提供下载链接：  
+**[下载简历 PDF](/files/resume.pdf)**（请将您的 `resume.pdf` 放到项目根目录的 `files` 文件夹后即可使用）
 
-Education
+---
+
+教育背景 | Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* （请在此填写：如 硕士/博士，学校，年份）
+* （如：本科，学校，年份）
 
-Work experience
+工作/实习经历 | Work Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* （请按时间倒序填写，例如：）
+* 时间: 职位
+  * 单位名称
+  * 工作内容简述
+  * 导师/主管（如有）
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+技能与兴趣 | Skills & Interests
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* （技能或方向 1）
+* （技能或方向 2）
+* （技能或方向 3）
 
-Publications
+发表与项目 | Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
+
+报告与演讲 | Talks
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
-  
-Teaching
+
+教学 | Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
+
+其他（服务、获奖等）| Service & More
 ======
-* Currently signed in to 43 different slack teams
+* （可填写：学术服务、获奖、语言等）
