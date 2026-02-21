@@ -22,7 +22,7 @@ repository               : "YufeiZhang0601/YufeiZhang0601.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "张宇飞 (Yufei Zhang)"
   pronouns         :
   bio              : "MS in Mechanical Engineering @ Columbia. Robotics, reinforcement learning, rehabilitation systems."
@@ -34,7 +34,7 @@ author:
   # Academic websites
   academia         :
   arxiv            :
-  googlescholar    : "https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID"   # 替换 YOUR_SCHOLAR_ID 为你的 Google Scholar 个人 ID
+  googlescholar    : "https://scholar.google.com/citations?user=sXNewzcAAAAJ&hl=en&oi=ao"   # 替换 YOUR_SCHOLAR_ID 为你的 Google Scholar 个人 ID
   inspire-hep      :
   impactstory      :
   orcid            :
