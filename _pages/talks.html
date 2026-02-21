@@ -7,18 +7,22 @@ author_profile: true
 
 <h2 class="archive__subtitle">Oral</h2>
 {% assign oral_talks = site.talks | where: "type", "Oral" | reverse %}
+<div class="grid__wrapper">
 {% for post in oral_talks %}
-  {% include archive-single-talk.html %}
+  {% include archive-single-talk.html type="grid" %}
 {% endfor %}
+</div>
 {% if oral_talks.size == 0 %}
 <p>No oral presentations yet.</p>
 {% endif %}
 
 <h2 class="archive__subtitle">Poster</h2>
 {% assign poster_talks = site.talks | where: "type", "Poster" | reverse %}
+<div class="grid__wrapper">
 {% for post in poster_talks %}
-  {% include archive-single-talk.html %}
+  {% include archive-single-talk.html type="grid" %}
 {% endfor %}
+</div>
 {% if poster_talks.size == 0 %}
 <p>No poster presentations yet.</p>
 {% endif %}

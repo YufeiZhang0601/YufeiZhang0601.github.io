@@ -32,13 +32,7 @@ layout: single
 <li><strong>RoboMaster 战队 (PIP)</strong> (08/2022–09/2023) — 电控负责人，北工大。Dart 系统、工程师机器人电气、步兵底盘与云台、Sentry SLAM、无人机；组织 50+ 新人培训。</li>
 </ul>
 
-<h3>项目链接 (Portfolio)</h3>
-<ul>
-{% for post in site.portfolio %}
-<li><a href="{{ post.url }}">{{ post.title }}</a>{% if post.website %} — <a href="{{ post.website }}">网站</a>{% endif %}</li>
-{% endfor %}
-</ul>
-<p>本站使用 <a href="https://jekyllrb.com/">Jekyll</a> 构建，托管于 <a href="https://pages.github.com/">GitHub Pages</a>。源码：<a href="https://github.com/YufeiZhang0601/YufeiZhang0601.github.io">GitHub</a>。</p>
+<p class="lang-zh">本站使用 <a href="https://jekyllrb.com/">Jekyll</a> 构建，托管于 <a href="https://pages.github.com/">GitHub Pages</a>。源码：<a href="https://github.com/YufeiZhang0601/YufeiZhang0601.github.io">GitHub</a>。</p>
 </div>
 
 <div class="lang-en">
@@ -65,11 +59,13 @@ layout: single
 <li><strong>RoboMaster Robotics Team (PIP), BJUT</strong> (08/2022–09/2023) — Electrical Control Lead. Dart system, Engineer Robot, Infantry chassis, Sentry SLAM, UAV; trained 50+ applicants.</li>
 </ul>
 
-<h3>Portfolio</h3>
-<ul>
-{% for post in site.portfolio %}
-<li><a href="{{ post.url }}">{{ post.title }}</a>{% if post.website %} — <a href="{{ post.website }}">Website</a>{% endif %}</li>
-{% endfor %}
-</ul>
 <p>This site is built with <a href="https://jekyllrb.com/">Jekyll</a> and hosted on <a href="https://pages.github.com/">GitHub Pages</a>. Source: <a href="https://github.com/YufeiZhang0601/YufeiZhang0601.github.io">GitHub</a>.</p>
+</div>
+
+<h3 class="lang-zh">项目详情 (点击进入)</h3>
+<h3 class="lang-en">Portfolio (click to open)</h3>
+<div class="grid__wrapper">
+{% for post in site.portfolio %}
+{% include archive-single.html type="grid" %}
+{% endfor %}
 </div>
