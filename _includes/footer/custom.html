@@ -13,4 +13,21 @@
     await mermaid.run({querySelector:'code.language-mermaid'});
 </script>
 
+<!-- Language toggle: persist choice and apply on load -->
+<script>
+(function() {
+  var STORAGE_KEY = 'site-lang';
+  function getLang() { try { return localStorage.getItem(STORAGE_KEY) || 'zh'; } catch (e) { return 'zh'; } }
+  function setLang(lang) { try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {} }
+  function applyLang(lang) {
+    document.documentElement.setAttribute('data-lang', lang);
+  }
+  applyLang(getLang());
+  var btn = document.getElementById('lang-toggle');
+  if (btn) {
+    var a = btn.querySelector('a');
+    if (a) a.addEventListener('click', function(e) { e.preventDefault(); var next = getLang() === 'zh' ? 'en' : 'zh'; setLang(next); applyLang(next); });
+  }
+})();
+</script>
 <!-- end custom footer snippets -->
