@@ -1,16 +1,24 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Oral & Poster"
 permalink: /talks/
 author_profile: true
 ---
 
-{% if site.talkmap_link == true %}
-
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
-{% endif %}
-
-{% for post in site.talks reversed %}
+<h2 class="archive__subtitle">Oral</h2>
+{% assign oral_talks = site.talks | where: "type", "Oral" | reverse %}
+{% for post in oral_talks %}
   {% include archive-single-talk.html %}
 {% endfor %}
+{% if oral_talks.size == 0 %}
+<p>No oral presentations yet.</p>
+{% endif %}
+
+<h2 class="archive__subtitle">Poster</h2>
+{% assign poster_talks = site.talks | where: "type", "Poster" | reverse %}
+{% for post in poster_talks %}
+  {% include archive-single-talk.html %}
+{% endfor %}
+{% if poster_talks.size == 0 %}
+<p>No poster presentations yet.</p>
+{% endif %}
