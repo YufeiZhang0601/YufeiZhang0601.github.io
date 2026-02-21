@@ -22,7 +22,7 @@ LinkedIn：[linkedin.com/in/zyffbk](https://www.linkedin.com/in/zyffbk)
 ### 项目与经历 (Portfolio)
 
 {% for post in site.portfolio %}
-* **[{{ post.title }}]({{ post.url }})** — {{ post.excerpt | strip_html | strip_newlines | truncate: 120 }}
+* **[{{ post.title }}]({{ post.url }})** — {{ post.excerpt | strip_html | strip_newlines | truncate: 120 }} {% if post.website %}[网站]({{ post.website }}){% endif %}
 {% endfor %}
 
 本站使用 [Jekyll](https://jekyllrb.com/) 构建，托管于 [GitHub Pages](https://pages.github.com/)。源码见 [GitHub](https://github.com/YufeiZhang0601/YufeiZhang0601.github.io)。
@@ -44,7 +44,7 @@ Address: 425 Summit Ave, Jersey City, NJ 07306, USA
 ### Portfolio
 
 {% for post in site.portfolio %}
-* **[{{ post.title }}]({{ post.url }})** — {{ post.excerpt | strip_html | strip_newlines | truncate: 120 }}
+* **[{{ post.title }}]({{ post.url }})** — {{ post.excerpt | strip_html | strip_newlines | truncate: 120 }} {% if post.website %}[Website]({{ post.website }}){% endif %}
 {% endfor %}
 
 This site is built with [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/). Source: [GitHub](https://github.com/YufeiZhang0601/YufeiZhang0601.github.io).

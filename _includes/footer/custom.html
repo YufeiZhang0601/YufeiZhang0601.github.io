@@ -13,20 +13,26 @@
     await mermaid.run({querySelector:'code.language-mermaid'});
 </script>
 
-<!-- Language toggle: persist choice and apply on load -->
+<!-- Language toggle: pill button, default English, persist choice -->
 <script>
 (function() {
   var STORAGE_KEY = 'site-lang';
-  function getLang() { try { return localStorage.getItem(STORAGE_KEY) || 'zh'; } catch (e) { return 'zh'; } }
+  function getLang() { try { return localStorage.getItem(STORAGE_KEY) || 'en'; } catch (e) { return 'en'; } }
   function setLang(lang) { try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {} }
   function applyLang(lang) {
     document.documentElement.setAttribute('data-lang', lang);
   }
   applyLang(getLang());
-  var btn = document.getElementById('lang-toggle');
-  if (btn) {
-    var a = btn.querySelector('a');
-    if (a) a.addEventListener('click', function(e) { e.preventDefault(); var next = getLang() === 'zh' ? 'en' : 'zh'; setLang(next); applyLang(next); });
+  var wrap = document.getElementById('lang-toggle');
+  if (wrap) {
+    wrap.querySelectorAll('.lang-opt').forEach(function(el) {
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        var lang = el.getAttribute('data-lang');
+        setLang(lang);
+        applyLang(lang);
+      });
+    });
   }
 })();
 </script>

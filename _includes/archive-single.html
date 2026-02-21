@@ -80,5 +80,9 @@
       <p><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% endif %}
 
+    {% if post.collection == 'portfolio' and post.website %}
+      <p><a href="{{ post.website | prepend: base_path }}" target="_blank" rel="noopener"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Website / 项目网站</a></p>
+    {% endif %}
+
   </article>
 </div>
