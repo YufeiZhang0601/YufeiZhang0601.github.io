@@ -34,7 +34,7 @@ author:
   # Academic websites
   academia         :
   arxiv            :
-  googlescholar    :
+  googlescholar    : "https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID"   # 替换 YOUR_SCHOLAR_ID 为你的 Google Scholar 个人 ID
   inspire-hep      :
   impactstory      :
   orcid            :
