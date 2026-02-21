@@ -17,4 +17,6 @@ E-mail: [yz4917@columbia.edu](mailto:yz4917@columbia.edu)
 LinkedIn: [linkedin.com/in/zyffbk](https://www.linkedin.com/in/zyffbk)  
 Address: 425 Summit Ave, Jersey City, NJ 07306, USA
 
+**Documents** — [CV](/files/Yufei%20Zhang_CV.pdf) · [Transcript](/files/transcript/transcript.pdf) · [Publication PDFs](/files/publication/)
+
 本站使用 [Jekyll](https://jekyllrb.com/) 构建，托管于 [GitHub Pages](https://pages.github.com/)。源码见 [GitHub](https://github.com/YufeiZhang0601/YufeiZhang0601.github.io)。

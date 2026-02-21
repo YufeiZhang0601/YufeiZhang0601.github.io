@@ -7,7 +7,16 @@ redirect_from:
   - /resume
 ---
 
-**Download PDF:** [Yufei Zhang CV](/files/Yufei%20Zhang_CV.pdf)
+**Downloads**
+* [Yufei Zhang — CV (PDF)](/files/Yufei%20Zhang_CV.pdf)
+* [Academic Transcript (PDF)](/files/transcript/transcript.pdf)
+* **Publication PDFs**
+  * [Attention U-net for Cell Instance Segmentation](/files/publication/Attention%20U-net%20for%20Cell%20Instance%20Segmentation.pdf)
+  * [Attention-based Mask R-CNN for Microvascular Segmentation](/files/publication/Attention_based_Mask_R_CNN_for_Microvascular_Segmentation%20%283%29.pdf)
+  * [Fine-grained Classification and Recognition in Sports Videos](/files/publication/Fine_grained_Classification_and_Recognition_in_Sports_Videos.pdf)
+  * [From Structural Design to Dynamics Modeling — 3-RRR Parallel Ankle](/files/publication/From%20Structural%20Design%20to%20Dynamics%20Modeling%20Control-Oriented%20Development%20of%20a%203-RRR%20Parallel%20Ankle.pdf)
+  * [Human-like Lip-Sync Robot Design](/files/publication/Human-like%20Lip-Sync%20Robot%20Design.pdf)
+  * [Robust Fault Diagnosis for Gas Turbine Rotor via Transfer RL](/files/publication/Robust%20Fault%20Diagnosis%20for%20Gas%20Turbine%20Rotor%20via%20Transfer%20Reinforcement%20Learning.pdf)
 
 ---
 
