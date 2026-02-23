@@ -64,8 +64,8 @@ layout: single
 
 <h3 class="lang-zh">项目详情 (点击进入)</h3>
 <h3 class="lang-en">Portfolio (click to open)</h3>
-<div class="grid__wrapper">
+<div class="grid__wrapper grid__wrapper--portfolio">
 {% for post in site.portfolio %}
-{% include archive-single.html type="grid" %}
+{% include archive-single-portfolio.html %}
 {% endfor %}
 </div>

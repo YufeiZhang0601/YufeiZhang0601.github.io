@@ -5,10 +5,8 @@ permalink: /portfolio/
 author_profile: true
 ---
 
-{% include base_path %}
-
-
+<div class="grid__wrapper grid__wrapper--portfolio">
 {% for post in site.portfolio %}
-  {% include archive-single.html %}
+  {% include archive-single-portfolio.html %}
 {% endfor %}
-
+</div>

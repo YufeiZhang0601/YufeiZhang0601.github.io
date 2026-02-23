@@ -1,0 +1,37 @@
+{% include base_path %}
+{% if include.post %}{% assign post = include.post %}{% endif %}
+{% if post.header.teaser %}
+  {% assign teaser = post.header.teaser %}
+{% elsif post.header.gif %}
+  {% assign teaser = post.header.gif %}
+{% else %}
+  {% assign teaser = nil %}
+{% endif %}
+{% assign video = post.header.video %}
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<article class="project-box" itemscope itemtype="http://schema.org/CreativeWork">
+  <a href="{{ base_path }}{{ post.url }}" rel="permalink" class="project-box__link">
+    <div class="project-box__cover">
+      {% if video %}
+        <video class="project-box__media" src="{% if video contains '://' %}{{ video }}{% else %}{{ video | prepend: '/images/' | prepend: base_path }}{% endif %}" playsinline muted loop preload="metadata"{% if teaser %} poster="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}"{% endif %}></video>
+      {% elsif teaser %}
+        <img class="project-box__media" src="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}" alt="">
+      {% else %}
+        <div class="project-box__placeholder">Cover</div>
+      {% endif %}
+    </div>
+    <div class="project-box__body">
+      <h3 class="project-box__title" itemprop="headline">{{ title }}</h3>
+      {% if post.excerpt %}<p class="project-box__excerpt" itemprop="description">{{ post.excerpt | strip_html | strip_newlines | truncate: 140 }}</p>{% endif %}
+      {% if post.website %}<span class="project-box__action">View project / 查看项目 →</span>{% endif %}
+    </div>
+  </a>
+  {% if post.website %}
+  <a href="{{ post.website | prepend: base_path }}" class="project-box__website" target="_blank" rel="noopener">Website / 网站</a>
+  {% endif %}
+</article>
