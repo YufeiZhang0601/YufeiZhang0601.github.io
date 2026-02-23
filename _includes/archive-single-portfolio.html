@@ -18,9 +18,9 @@
   <a href="{{ base_path }}{{ post.url }}" rel="permalink" class="project-box__link">
     <div class="project-box__cover">
       {% if video %}
-        <video class="project-box__media" src="{% if video contains '://' %}{{ video }}{% else %}{{ video | prepend: '/images/' | prepend: base_path }}{% endif %}" playsinline muted loop preload="metadata"{% if teaser %} poster="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}"{% endif %}></video>
+        <video class="project-box__media" src="{% if video contains '://' %}{{ video }}{% elsif video contains '/' %}{{ base_path }}{{ video }}{% else %}{{ base_path }}/images/{{ video }}{% endif %}" playsinline muted loop preload="metadata"{% if teaser %} poster="{{ base_path }}{% if teaser contains '://' %}{{ teaser }}{% elsif teaser contains '/' %}{{ teaser }}{% else %}/images/{{ teaser }}{% endif %}"{% endif %}></video>
       {% elsif teaser %}
-        <img class="project-box__media" src="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}" alt="">
+        <img class="project-box__media" src="{% if teaser contains '://' %}{{ teaser }}{% elsif teaser contains '/' %}{{ base_path }}{{ teaser }}{% else %}{{ base_path }}/images/{{ teaser }}{% endif %}" alt="">
       {% else %}
         <div class="project-box__placeholder">Cover</div>
       {% endif %}
